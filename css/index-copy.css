@@ -1,0 +1,16 @@
+.wrapper {
+  display: flex;
+  background-color: plum;
+}
+.navbar {
+  width: 50%;
+  background-color: powderblue;
+}
+.main {
+  width: 50%;
+  background-color: purple;
+}
+.main > img {
+  width: 100%;
+  display: block;
+}
