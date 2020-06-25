@@ -19,8 +19,10 @@
     <link rel="stylesheet" href="./css/index.css" />
   </head>
   <body>
-    <div class="wrapper">
-      <nav>
+    <header class="header">
+      <div class="container">
+        <h1>Anh Thu Vo</h1>
+
         <a href="#" class="nav__btn">
           <i class="fa fa-caret-down fa-3x nav__btn__down"></i>
           <i
@@ -29,211 +31,226 @@
           ></i>
         </a>
 
-        <div class="nav-fixed">
-          <div class="nav__avatar"></div>
-          <h3 class="nav__name">
-            VO HOANG ANH THU
-          </h3>
-
+        <nav>
           <div class="navbar">
-            <a class="navbar__link active" href="#">
-              <i class="fa fa-home"></i>
-              Home
-            </a>
+            <div class="navbar__container">
+              <a class="navbar__link active" href="#">
+                <i class="fa fa-home"></i>
+                Home
+              </a>
 
-            <a class="navbar__link" href="#aboutMe">
-              <i class="fas fa-user-circle"></i>
-              About
-            </a>
+              <a class="navbar__link" href="#aboutMe">
+                <i class="fas fa-user-circle"></i>
+                About
+              </a>
 
-            <a class="navbar__link" href="#projects">
-              <i class="fas fa-file-code"></i>
-              Projects
-            </a>
+              <a class="navbar__link" href="#projects">
+                <i class="fas fa-file-code"></i>
+                Projects
+              </a>
 
-            <a class="navbar__link" href="#contact">
-              <i class="fas fa-phone-square-alt"></i>
-              Contact
-            </a>
+              <a class="navbar__link" href="#contact">
+                <i class="fas fa-phone-square-alt"></i>
+                Contact
+              </a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <section class="carousel" id="home">
+      <div class="carousel__overlay">
+        Hi, I am <br />
+        Vo Hoang Anh Thu
+      </div>
+    </section>
+
+    <section class="aboutMe" id="aboutMe">
+      <div class="aboutMe__container">
+        <div class="aboutMe__container__avatar">
+            <img src="./img/avatar1.jpg" alt="">
+        </div>
+        <div class="aboutMe__container__content">
+          <h1 class="aboutMe__title">About Me</h1>
+          <ul>
+            <li>
+              Bachelor' degree in Materials Technology from Bach Khoa University
+            </li>
+            <li>GPA 8.09</li>
+            <li>IELTS certificate 7.0</li>
+            <li>Date of birth: 26/03/1996</li>
+          </ul>
+          <br />
+          <p>
+            I love programming so I'm trying hard to become a front end
+            developer.
+            <br />
+            I've taken a front end course at Cyber Soft for 1 month and it lasts
+            for 5 months.
+            <br />
+            Please, have a look at my projects and consider my profile.
+            <br />Thank you!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="mySkill container">
+      <h1 class="mySkill__title">My Skills</h1>
+
+      <p>What I'm learning</p>
+
+      <div class="mySkill__list">
+        <div class="mySkill__list__item">
+          <div class="mySkill__list__item__container">
+            <i class="fab fa-html5 fa-3x" style="color:#076dcc;"></i>
+            <h1>HTML5</h1>
           </div>
         </div>
-      </nav>
 
-      <main>
-        <section class="carousel" id="home">
-          <img src="./img/carousel3.jpg" alt="" />
-          <div class="carousel__overlay">
-            Vo Hoang <span style="opacity: 0;">__</span> <br />
-            <span style="opacity: 0;">__</span> Anh Thu
+        <div class="mySkill__list__item">
+          <div class="mySkill__list__item__container">
+            <i class="fab fa-css3 fa-3x" style="color:#e79805;"></i>
+            <h1>CSS3</h1>
           </div>
-        </section>
+        </div>
 
-        <section class="aboutMe" id="aboutMe">
-          <h1 class="aboutMe__title">About Me</h1>
-
-          <div class="aboutMe__container">
-            <img class="aboutMe__container__avatar" src="./img/avatar1.jpg" alt="aboutMe__avatar">
-            <div class="aboutMe__container__content">
-              <h1>I'm Vo Hoang Anh Thu</h1>
-              <ul>
-                <li>Bachelor' degree in Materials Technology from Bach Khoa University</li>
-                <li>GPA 8.09</li>
-                <li>IELTS certificate 7.0</li>
-                <li>Date of birth: 26/03/1996</li>
-              </ul>
-              <br>
-              <p>
-                I love programming so I'm trying hard to become a
-                front end developer.
-                <br />
-                I've taken a front end course at Cyber Soft for 1 month and it
-                lasts for 5 months. 
-                <br> Please, have a look at my projects and consider my profile.
-                <br />Thank you!
-              </p>
-            </div>
+        <div class="mySkill__list__item">
+          <div class="mySkill__list__item__container">
+            <i class="fab fa-js-square fa-3x" style="color:#e7d005;"></i>            
+            <h1>Javascript</h1>
           </div>
-        </section>
+        </div>
 
-       <section class="mySkill">
-          <h1 class="mySkill__title">My Skills</h1>
+        <div class="mySkill__list__item">
+          <div class="mySkill__list__item__container">
+            <img src="./img/jquery-icon.webp" alt="jquey-icon" width="40px;"/>
+            <h1>Jquery</h1>
+          </div>
+        </div>
 
-          <p>What I'm learning</p>
+        <div class="mySkill__list__item">
+          <div class="mySkill__list__item__container">
+            <i class="fab fa-bootstrap fa-3x" style="color:#310288;"></i>
+            <h1>Bootstrap</h1>
+          </div>
+        </div>
 
-          <div class="mySkill__list">
-            <div class="mySkill__list__item">
-              <div class="mySkill__list__item__container">
-                <i class="fab fa-html5 fa-3x"></i>
-                <h1>HTML5</h1>
-              </div>
-            </div>
-
-            <div class="mySkill__list__item">
-              <div class="mySkill__list__item__container">
-                <i class="fab fa-css3 fa-3x"></i>
-                <h1>CSS3</h1>
-              </div>
-            </div>
-
-            <div class="mySkill__list__item">
-              <div class="mySkill__list__item__container">
-                <img src="./img/javascript-icon.webp" alt="js-icon" />
-                <h1>Javascript</h1>
-              </div>
-            </div>
-
-            <div class="mySkill__list__item">
-              <div class="mySkill__list__item__container">
-                <img src="./img/jquery-icon.webp" alt="jquey-icon" />
-                <h1>Jquery</h1>
-              </div>
-            </div>
-
-            <div class="mySkill__list__item">
-              <div class="mySkill__list__item__container">
-                <i class="fab fa-bootstrap fa-3x"></i>
+        <div class="mySkill__list__item">
+            <div class="mySkill__list__item__container">
+                <i class="fab fa-sass fa-3x" style="color:#b907aaa4;"></i>              
                 <h1>Bootstrap</h1>
-              </div>
+            </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="projects" id="projects">
+      <h1 class="projects__title">My Projects</h1>
+
+      <div class="projects__list">
+        <div class="projects__list__item">
+          <div class="projects__item__overlay">
+            <a class="projects__overlay__btn view" href="#">View</a>
+            <a class="projects__overlay__btn code" href="#">Code</a>
+          </div>
+        </div>
+
+        <div class="projects__list__item">
+          <div class="projects__item__overlay">
+            <a class="projects__overlay__btn view" href="#">View</a>
+            <a class="projects__overlay__btn code" href="#">Code</a>
+          </div>
+        </div>
+
+        <div class="projects__list__item">
+          <div class="projects__item__overlay">
+            <a
+              class="projects__overlay__btn view"
+              href="https://anhthuvo.github.io/movie-project.github.io/"
+              target="_blank"
+              >View</a
+            >
+            <a
+              class="projects__overlay__btn code"
+              href="https://github.com/anhthuvo/movie-project.github.io"
+              target="_blank"
+              >Code</a
+            >
+          </div>
+        </div>
+
+        <div class="projects__list__item">
+          <div class="projects__item__overlay">
+            <a class="projects__overlay__btn view" href="#">View</a>
+            <a class="projects__overlay__btn code" href="#">Code</a>
+          </div>
+        </div>
+
+        <div class="projects__list__item">
+          <div class="projects__item__overlay">
+            <a class="projects__overlay__btn view" href="#">View</a>
+            <a class="projects__overlay__btn code" href="#">Code</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="contact__overlay"></div>
+
+      <div class="contact__container">
+        <div class="contact__container__detail">
+          <div class="contact__detail__overlay">
+            <div class="contact__detail__overlay__item">
+              <i class="fa fa-phone-volume fa-2x"></i>
+              <a href="tel:0909812267">(+84)909 812 267</a>
+            </div>
+
+            <div class="contact__detail__overlay__item">
+              <i class="fa fa-envelope fa-2x"></i>
+              <a href="mailto:thu.vohoanganh96@gmail.com"
+                >thu.vohoanganh96@gmail.com</a
+              >
+            </div>
+
+            <div class="contact__detail__overlay__item">
+              <i class="fa fa-address-book fa-2x"></i>
+              <a href="https://goo.gl/maps/bfRgftMDHmAnjW1S8"
+                >7B Tran Phu, Ward 4, District 5</a
+              >
             </div>
           </div>
-        </section>
+        </div>
 
-         <section class="projects" id="projects">
-          <h1 class="projects__title">My Projects</h1>
+        <div class="contact__container__message">
+          <form action="">
+            <h1>Message</h1>
 
-          <div class="projects__list">
-            <div class="projects__list__item">
-              <div class="projects__item__overlay">
-                <a class="projects__overlay__btn view" href="#">View</a>
-                <a class="projects__overlay__btn code" href="#">Code</a>
-              </div>
-            </div>
+            <input type="text" name="name" id="" placeholder="Your Name" />
 
-            <div class="projects__list__item">
-              <div class="projects__item__overlay">
-                <a class="projects__overlay__btn view" href="#">View</a>
-                <a class="projects__overlay__btn code" href="#">Code</a>
-              </div>
-            </div>
+            <input type="text" placeholder="Your Email" />
 
-            <div class="projects__list__item">
-              <div class="projects__item__overlay">
-                <a class="projects__overlay__btn view" href="https://anhthuvo.github.io/movie-project.github.io/" target="_blank">View</a>
-                <a class="projects__overlay__btn code" href="https://github.com/anhthuvo/movie-project.github.io" target="_blank">Code</a>
-              </div>
-            </div>
+            <input type="text" placeholder="Subject" />
 
-            <div class="projects__list__item">
-              <div class="projects__item__overlay">
-                <a class="projects__overlay__btn view" href="#">View</a>
-                <a class="projects__overlay__btn code" href="#">Code</a>
-              </div>
-            </div>
+            <textarea
+              name="message"
+              id="message"
+              rows="5"
+              placeholder="Message"
+            ></textarea>
 
-            <div class="projects__list__item">
-              <div class="projects__item__overlay">
-                <a class="projects__overlay__btn view" href="#">View</a>
-                <a class="projects__overlay__btn code" href="#">Code</a>
-              </div>
-            </div>
-          </div>
-        </section>
+            <button>Send</button>
+          </form>
+        </div>
+      </div>
+    </section>
 
-        <section class="contact" id="contact">
-          <div class="contact__overlay"></div>
-
-          <div class="contact__container">
-            <div class="contact__container__detail">
-              <div class="contact__detail__overlay">
-                <div>
-                  <i class="fa fa-phone-volume fa-2x"></i>
-                  <a href="tel:0909812267">(+84)909 812 267</a>
-                </div>
-
-                <div class="">
-                  <i class="fa fa-envelope fa-2x"></i>
-                  <a href="mailto:thu.vohoanganh96@gmail.com"
-                    >thu.vohoanganh96@gmail.com</a
-                  >
-                </div>
-
-                <div class="">
-                  <i class="fa fa-address-book fa-2x"></i>
-                  <a href="https://goo.gl/maps/bfRgftMDHmAnjW1S8"
-                    >7B Tran Phu, Ward 4, District 5</a
-                  >
-                </div>
-              </div>
-            </div>
-
-            <div class="contact__container__message">
-              <form action="">
-                <h1>Message</h1>
-
-                <input type="text" name="name" id="" placeholder="Your Name" />
-
-                <input type="text" placeholder="Your Email" />
-
-                <input type="text" placeholder="Subject" />
-
-                <textarea
-                  name="message"
-                  id="message"
-                  rows="5"
-                  placeholder="Message"
-                ></textarea>
-
-                <button>Send</button>
-              </form>
-            </div>
-          </div>
-        </section>
-
-        <footer>
-          © 2020 by Anh Thu Vo
-        </footer>
-      </main>
-    </div>
+    <footer>
+      © 2020 by Anh Thu Vo
+    </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
     <script src="./js/index.js"></script>
