@@ -504,13 +504,13 @@ body {
 }
 
 .projects .projects__list .projects__list__item:nth-child(2) {
-  background-image: url("../img/project3.png");
+  background-image: url("../img/project2.png");
   -webkit-transform: perspective(300px) translate3d(0px, 0, 0px) rotateY(10deg);
           transform: perspective(300px) translate3d(0px, 0, 0px) rotateY(10deg);
 }
 
 .projects .projects__list .projects__list__item:nth-child(3) {
-  background-image: url("../img/project2.png");
+  background-image: url("../img/project3.png");
   -webkit-transform: perspective(300px) translate3d(0px, 0, 50px);
           transform: perspective(300px) translate3d(0px, 0, 50px);
   z-index: 2;

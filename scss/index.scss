@@ -319,12 +319,12 @@ body {
             }
 
             &:nth-child(2) {
-                background-image: url("../img/project3.png");
+                background-image: url("../img/project2.png");
                 transform: perspective(300px) translate3d(0px, 0, 0px) rotateY(10deg);
             }
 
             &:nth-child(3) {
-                background-image: url("../img/project2.png");
+                background-image: url("../img/project3.png");
                 transform: perspective(300px) translate3d(0px, 0, 50px);
                 z-index: 2;
             }

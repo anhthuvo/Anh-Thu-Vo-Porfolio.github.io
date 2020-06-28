@@ -28,7 +28,8 @@ $(document).ready(function(){
     // click outside navbar, navbar disappear
     $("body").click(function(event){
       console.log(event.target.className);
-        if ( $("nav").css("display") == 'block'){
+        if ( $("nav").css("display") == 'block' && 
+        $(window).width() <= 767.98){
           if ( event.target.className.indexOf("navbar") == -1 &&
                 event.target.className.indexOf("nav__btn__down") == -1 ){
                   navSlideDown(false);
