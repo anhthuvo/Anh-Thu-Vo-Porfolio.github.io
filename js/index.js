@@ -27,7 +27,6 @@ $(document).ready(function(){
 
     // click outside navbar, navbar disappear
     $("body").click(function(event){
-      console.log(event.target.className);
         if ( $("nav").css("display") == 'block' && 
         $(window).width() <= 767.98){
           if ( event.target.className.indexOf("navbar") == -1 &&

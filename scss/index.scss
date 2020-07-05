@@ -148,6 +148,7 @@ body {
         text-align: center;
         line-height: 7vw;
         background-color: rgba(0, 0, 0, 0.7);
+        padding: 0 20px;
 
         @media (max-width: 767.98px) {
             
@@ -189,10 +190,10 @@ body {
             box-sizing: border-box;
             padding: 0 20px;
             @include Text($txtGrey, $h4, $fwMedium, 1px);
-            line-height: 20px;
 
             .aboutMe__title {
-                margin-bottom: 30px;
+                margin-bottom: 20px;
+                margin-top: 20px;
                 @include Text($txtDark, $h1, $fwMedium, 0);
 
                 @media (max-width: 575.98px) {
@@ -200,6 +201,25 @@ body {
                 }
             }
 
+            ul, p, a {
+                line-height: 20px;
+                margin-bottom: 20px;
+                text-decoration: none;
+            }
+
+            .downloadBtn {
+                box-sizing: border-box !important;
+                @include btn($dark, 5px, 2px solid transparent, 15px 20px);
+                @include Text($txtWhite, $h4, $fwMedium, 1px);
+                margin-bottom: 20px;
+                display: inline-block;
+
+                &:hover {
+                    background-color: $white;
+                    color: $txtDark;
+                    border: 2px solid $dark;
+                }
+            }
             @media (max-width: 767.98px) {
                 @include Text($txtGrey, $h5, $fwMedium, 0px);
                 line-height: 17px;
@@ -561,6 +581,7 @@ body {
                     outline: none;
                     border: none;
                     float: right;
+                    cursor: pointer;
                 }
             }
 

@@ -234,6 +234,7 @@ body {
   text-align: center;
   line-height: 7vw;
   background-color: rgba(0, 0, 0, 0.7);
+  padding: 0 20px;
 }
 
 .aboutMe {
@@ -293,11 +294,11 @@ body {
   font-weight: 400;
   text-decoration: none;
   letter-spacing: 1px;
-  line-height: 20px;
 }
 
 .aboutMe .aboutMe__container .aboutMe__container__content .aboutMe__title {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+  margin-top: 20px;
   color: #333;
   font-size: 32px;
   font-weight: 400;
@@ -309,6 +310,35 @@ body {
   .aboutMe .aboutMe__container .aboutMe__container__content .aboutMe__title {
     text-align: center;
   }
+}
+
+.aboutMe .aboutMe__container .aboutMe__container__content ul, .aboutMe .aboutMe__container .aboutMe__container__content p, .aboutMe .aboutMe__container .aboutMe__container__content a {
+  line-height: 20px;
+  margin-bottom: 20px;
+  text-decoration: none;
+}
+
+.aboutMe .aboutMe__container .aboutMe__container__content .downloadBtn {
+  -webkit-box-sizing: border-box !important;
+          box-sizing: border-box !important;
+  outline: none;
+  background-color: #101010;
+  border-radius: 5px;
+  border: 2px solid transparent;
+  padding: 15px 20px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: none;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+.aboutMe .aboutMe__container .aboutMe__container__content .downloadBtn:hover {
+  background-color: #fff;
+  color: #333;
+  border: 2px solid #101010;
 }
 
 @media (max-width: 767.98px) {
@@ -873,6 +903,7 @@ body {
   outline: none;
   border: none;
   float: right;
+  cursor: pointer;
 }
 
 @media (max-width: 767.98px) {
