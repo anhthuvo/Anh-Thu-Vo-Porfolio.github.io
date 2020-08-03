@@ -13,7 +13,7 @@ html {
   
 body {
   font-family: "Josefin Sans", sans-serif;
-  background-color: $light;
+  background-color: $dark;
 }
 
 .container {
@@ -135,6 +135,7 @@ body {
     height: 600px;
     background-image: url('../img/carousel3.jpg');
     background-size: cover;
+    box-shadow: inset 0px -20px 20px $dark;
     background-position: center center;
 
     img {
@@ -262,7 +263,7 @@ body {
     background-color: transparent;
 
     .mySkill__title {
-        @include Text($txtDark, $h1, $fwMedium, 2px);
+        @include Text($txtWhite, $h1, $fwMedium, 2px);
         padding-bottom: 20px;
         margin-bottom: 20px;
         position: relative;
@@ -280,7 +281,7 @@ body {
 
     
     & > p {
-        @include Text($txtGrey, $h4, $fwMedium, 1px);
+        @include Text($txtWhite, $h4, $fwMedium, 1px);
         text-align: center;
         margin-bottom: 50px;
     }
@@ -294,7 +295,7 @@ body {
         .mySkill__list__item {
             margin-bottom: 20px;
                 h1 {
-                    @include Text($txtBlue, $h4, $fwMedium, 0);
+                    @include Text($txtWhite, $h4, $fwMedium, 0);
                     margin-top: 10px
                 }
 
@@ -609,6 +610,7 @@ body {
 }
 
 footer {
+    color: $txtWhite;
     text-align: center;
     padding: 20px 0;
 }
