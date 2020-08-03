@@ -268,19 +268,35 @@ body {
 }
 
 .aboutMe .aboutMe__container .aboutMe__container__avatar {
+  margin: 20px;
   width: 40%;
-  padding: 50px 20px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+}
+
+.aboutMe .aboutMe__container .aboutMe__container__avatar__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  -webkit-box-shadow: inset 0 0 100px #0000007a;
+          box-shadow: inset 0 0 100px #0000007a;
+  border-radius: 50%;
 }
 
 .aboutMe .aboutMe__container .aboutMe__container__avatar img {
+  -webkit-filter: grayscale(30%);
+          filter: grayscale(30%);
+  display: block;
   width: 100%;
-  border-radius: 50%;
 }
 
 @media (max-width: 767.98px) {
   .aboutMe .aboutMe__container .aboutMe__container__avatar {
     width: 100%;
-    padding: 50px 50px;
   }
 }
 
@@ -288,7 +304,7 @@ body {
   width: 60%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 0 20px;
+  margin: 0 20px;
   color: rgba(0, 0, 0, 0.7);
   font-size: 14px;
   font-weight: 400;
@@ -363,7 +379,6 @@ body {
 
 @media (max-width: 575.98px) {
   .aboutMe .aboutMe__container .aboutMe__container__content {
-    padding: 50px;
     padding-top: 0;
   }
 }
@@ -383,6 +398,7 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    padding: 0 50px;
   }
 }
 
@@ -468,13 +484,13 @@ body {
 
 @media (max-width: 767.98px) {
   .mySkill .mySkill__list .mySkill__list__item {
-    width: 33.33333%;
+    width: 25%;
   }
 }
 
 @media (max-width: 575.98px) {
   .mySkill .mySkill__list .mySkill__list__item {
-    width: 50%;
+    width: 33.333%;
   }
 }
 
