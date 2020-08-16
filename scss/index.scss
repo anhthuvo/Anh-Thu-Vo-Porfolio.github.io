@@ -386,13 +386,11 @@ body {
             }
 
             &:nth-child(5) {
+                background-image: url("../img/project5.png");
+                background-size: contain;
+                background-repeat: no-repeat;
                 transform: perspective(300px) translate3d(-30%, 0, -50px) rotateY(-10deg);
                 z-index: 0;
-            }
-
-            &:nth-child(1),
-            &:nth-child(5) {
-                opacity: 0;
             }
 
             .projects__item__overlay {
@@ -467,8 +465,7 @@ body {
                 transform: translate3d(0,0,0) rotateY(0) !important;
                 @include flex(row, center, end);
 
-                &:nth-child(1),
-                &:nth-child(5) {
+                &:nth-child(1) {
                     display: none;
                 }
             }
