@@ -48,9 +48,7 @@ body {
 }
 
 .header {
-  position: sticky;
-  top: 0;
-  background-color: transparent;
+  background-color: white;
   width: 100%;
   z-index: 9;
 }
@@ -456,7 +454,7 @@ body {
   text-decoration: none;
   letter-spacing: 2px;
   padding-bottom: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
   position: relative;
   text-align: center;
 }
@@ -474,10 +472,19 @@ body {
 }
 
 .projects .projects__list {
-  margin: 100px auto 50px auto;
+  margin: 50px auto 50px auto;
   width: 100%;
   height: 23vw;
   display: flex;
+}
+
+@media (max-width: 991.98px) {
+  .projects .projects__list {
+    justify-content: center;
+    flex-wrap: wrap;
+    height: auto;
+    margin-top: -3%;
+  }
 }
 
 .projects .projects__list .projects__list__item {
@@ -611,14 +618,35 @@ body {
   }
 }
 
+.projects__Elearning {
+  margin-top: 100px;
+}
+
+.projects__Elearning__video {
+  width: 560px;
+  height: 315px;
+}
+
 @media (max-width: 991.98px) {
-  .projects .projects__list {
-    justify-content: center;
-    flex-wrap: wrap;
-    height: auto;
-    margin-top: -3%;
-    margin-top: 50px;
+  .projects__Elearning__video {
+    width: 100%;
   }
+}
+
+.projects__Elearning__description {
+  padding-left: 50px;
+}
+
+@media (max-width: 991.98px) {
+  .projects__Elearning__description {
+    width: auto;
+    margin-top: 50px;
+    padding-left: 0px;
+  }
+}
+
+.projects__Elearning__description ul {
+  margin-left: 50px;
 }
 
 .contact {
@@ -795,5 +823,11 @@ footer {
   color: #333;
   text-align: center;
   padding: 20px 0;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 /*# sourceMappingURL=index.css.map */
