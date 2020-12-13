@@ -495,11 +495,11 @@ body {
         }
 
         &__description {
-            padding-left: 50px;
+            //padding-left: 50px;
+            margin-top: 20px;
 
             @media (max-width: 991.98px) {
                 width: auto;
-                margin-top: 50px;
                 padding-left: 0px;
             }
 
