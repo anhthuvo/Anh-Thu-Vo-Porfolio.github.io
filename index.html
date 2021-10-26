@@ -70,18 +70,17 @@
           </li>
           <li>GPA 8.09</li>
           <li>IELTS certificate 7.0</li>
-          <li>Date of birth: 26/03/1996</li>
         </ul>
         <p>
           I love programming so I'm trying hard to become a front end
           developer.
           <br />
-          I've taken a front end course at Cyber Soft since 19-05-2020.
+          I've am taking a front-end development course
           <br />
           Please, have a look at my projects and consider my profile.
           <br />Thank you!
         </p>
-        <a href="./CV pdf/CV_front-end_Võ Hoàng Anh Thư.pdf" target="_blank">
+        <a href="./CV pdf/CV_front-end_ThuVoHoangAnh.pdf.pdf" target="_blank">
           <span class="downloadBtn">Download My CV<span>
         </a>
       </div>
@@ -92,8 +91,6 @@
     <div class="mySkill__overlay"></div>
     <div class="container">
       <h1 class="mySkill__title">My Skills</h1>
-
-      <p>What I'm learning</p>
 
       <div class="mySkill__list">
         <div class="mySkill__list__item">
@@ -114,13 +111,6 @@
           <div class="mySkill__list__item__container">
             <i class="fab fa-js-square fa-3x"></i>
             <h1>Javascript</h1>
-          </div>
-        </div>
-
-        <div class="mySkill__list__item">
-          <div class="mySkill__list__item__container">
-            <i class="fab fa-bootstrap fa-3x"></i>
-            <h1>Bootstrap</h1>
           </div>
         </div>
 
@@ -206,37 +196,53 @@
     <div class="projects__Elearning">
       <div class="container">
         <div class="row">
-          <div class="projects__Elearning__video">
-            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/g9VuopIO3d4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
           <div class="projects__Elearning__description">
-            <h2>E-learning project</h2>
-            <br>
-            <p> The website is based on Udemy.com.</p>
-            <br>
-            <p>Utilized Reactjs, Bootstrap, Ant-design, React hooks, Redux, Redux-thunk, html, Scss.</p>
-            <br>
-            <p>Supports Internet Explorer 11, Firefox, Chrome</p>
-            <br>
-            <h3>Detail function</h3>
-            <br>
-            <p>Site for user</p>
-            <ul>
-              <li>Sign up an account</li>
-              <li>Log in</li>
-              <li>See all courses</li>
-              <li>See courses in a specific category</li>
-              <li>See detail information of a course</li>
-              <li>Review user profile</li>
-              <li>Edit user profile</li>
-              <li>See courses user registered</li>
-              <li>See courses admin approve for user to learn</li>
-              <li>Register course</li>
-              <li>Unregister course</li>
-              <li>Search course by course title</li>
-            </ul>
-            
-            
+            <div class="projects__Elearning__layout">
+              <div>
+                <p>
+                  Movie pages are just the static page not integrated with back-end, built with only Html, Scss,
+                  Bootstrap and Javascript to practice my styling skill.
+                </p>
+                <br />
+                <h2>E-learning project</h2>
+                <br />
+                <p> The website is based on Udemy.com.</p>
+                <p>Utilized Reactjs, Bootstrap, Ant-design, React hooks, Redux, Redux-thunk, html, Scss.</p>
+                <p>Supports Firefox, Chrome</p>
+                <br>
+              </div>
+              <div class="projects__Elearning__video">
+                <div class="projects__Elearning__video__wrapper">
+                  <iframe width="100%" height="100%" src="https://www.youtube.com/embed/g9VuopIO3d4" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                </div>
+              </div>
+              <div class="">
+                <p>Pages for user include:</p>
+                <ul>
+                  <li>Sign up an account</li>
+                  <li>Log in</li>
+                  <li>Home page</li>
+                  <li>Category page</li>
+                  <li>Detail course: user can register or unregister course when login</li>
+                  <li>Video playlist of course</li>
+                  <li>User profile: update profile information, review registered courses, approved course</li>
+                </ul>
+                <br />
+                <p>Pages for admin include:</p>
+                <ul>
+                  <li>Course list: CRUD course</li>
+                  <li>User list</li>
+                  <li>Registration list: approve or reject</li>
+                </ul>
+                <br />
+                <p>Back-end was built simply with Node,js, Express.js, MongoDB, authentication with JSON web token.</p>
+                <p>You can review my code <a href="https://github.com/anhthuvo/elearning-be">here</a>
+                  and API <a href="https://elearning-be.herokuapp.com/api-doc/">here</a></p>
+                <br />
+              </div>
+            </div>
           </div>
         </div>
       </div>

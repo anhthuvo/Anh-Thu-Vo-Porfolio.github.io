@@ -276,7 +276,9 @@ body {
   }
 }
 
-.aboutMe .aboutMe__container .aboutMe__container__content ul, .aboutMe .aboutMe__container .aboutMe__container__content p, .aboutMe .aboutMe__container .aboutMe__container__content a {
+.aboutMe .aboutMe__container .aboutMe__container__content ul,
+.aboutMe .aboutMe__container .aboutMe__container__content p,
+.aboutMe .aboutMe__container .aboutMe__container__content a {
   line-height: 20px;
   margin-bottom: 20px;
   text-decoration: none;
@@ -382,7 +384,7 @@ body {
 }
 
 .mySkill .container .mySkill__title::after {
-  content: '';
+  content: "";
   width: 250px;
   height: 3px;
   position: absolute;
@@ -445,6 +447,8 @@ body {
 .projects {
   padding: 50px 0;
   background-color: #fff;
+  font-size: 1.2rem;
+  line-height: 2rem;
 }
 
 .projects .projects__title {
@@ -460,7 +464,7 @@ body {
 }
 
 .projects .projects__title::after {
-  content: '';
+  content: "";
   width: 250px;
   height: 3px;
   position: absolute;
@@ -622,15 +626,16 @@ body {
   margin-top: 100px;
 }
 
-.projects__Elearning__video {
-  width: 560px;
-  height: 315px;
+.projects__Elearning__video__wrapper {
+  width: 100%;
+  padding-top: 60%;
+  position: relative;
 }
 
-@media (max-width: 991.98px) {
-  .projects__Elearning__video {
-    width: 100%;
-  }
+.projects__Elearning__video__wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .projects__Elearning__description {
@@ -646,6 +651,25 @@ body {
 
 .projects__Elearning__description ul {
   margin-left: 50px;
+}
+
+.projects__Elearning__layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.projects__Elearning__layout > div {
+  padding: 0 1rem;
+}
+
+.projects__Elearning__layout .last-div {
+  grid-column: 1/3;
+}
+
+@media (max-width: 765px) {
+  .projects__Elearning__layout {
+    grid-template-columns: auto;
+  }
 }
 
 .contact {
@@ -693,20 +717,23 @@ body {
   padding: 20px 0;
 }
 
-.contact .contact__container .contact__container__detail .contact__detail__overlay .contact__detail__overlay__item a, .contact .contact__container .contact__container__detail .contact__detail__overlay .contact__detail__overlay__item i {
+.contact .contact__container .contact__container__detail .contact__detail__overlay .contact__detail__overlay__item a,
+.contact .contact__container .contact__container__detail .contact__detail__overlay .contact__detail__overlay__item i {
   text-decoration: none;
   color: white;
   display: block;
 }
 
 @media (max-width: 767.98px) {
-  .contact .contact__container .contact__container__detail .contact__detail__overlay .contact__detail__overlay__item a, .contact .contact__container .contact__container__detail .contact__detail__overlay .contact__detail__overlay__item i {
+  .contact .contact__container .contact__container__detail .contact__detail__overlay .contact__detail__overlay__item a,
+  .contact .contact__container .contact__container__detail .contact__detail__overlay .contact__detail__overlay__item i {
     display: inline;
   }
 }
 
 @media (max-width: 575.98px) {
-  .contact .contact__container .contact__container__detail .contact__detail__overlay .contact__detail__overlay__item a, .contact .contact__container .contact__container__detail .contact__detail__overlay .contact__detail__overlay__item i {
+  .contact .contact__container .contact__container__detail .contact__detail__overlay .contact__detail__overlay__item a,
+  .contact .contact__container .contact__container__detail .contact__detail__overlay .contact__detail__overlay__item i {
     padding-bottom: 5px;
     font-size: 12px;
   }
@@ -764,7 +791,8 @@ body {
   }
 }
 
-.contact .contact__container .contact__container__message form input, .contact .contact__container .contact__container__message form textarea {
+.contact .contact__container .contact__container__message form input,
+.contact .contact__container .contact__container__message form textarea {
   outline: none;
   border: none;
   border-bottom: 1px solid #d1d0d0;
@@ -777,7 +805,8 @@ body {
   letter-spacing: 2px;
 }
 
-.contact .contact__container .contact__container__message form input::placeholder, .contact .contact__container .contact__container__message form textarea::placeholder {
+.contact .contact__container .contact__container__message form input::placeholder,
+.contact .contact__container .contact__container__message form textarea::placeholder {
   color: #d1d0d0;
   font-size: 14px;
   font-weight: 300;
